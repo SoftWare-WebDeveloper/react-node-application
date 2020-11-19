@@ -1,0 +1,9 @@
+# FOLDERS
+/client/node_modules
+/client/public
+
+# FILES
+/client/package-lock.json
+
+# OTHER
+/.idea

@@ -1,0 +1,29 @@
+@import "src/style/utils/library";
+@import "src/style/utils/typography";
+@import "src/style/colors";
+
+.nav-bar {
+  width: max-content;
+  height: 100%;
+
+  @extend .flex-center;
+  @extend .list;
+
+  & .--option {
+    cursor: pointer;
+    margin-left: 10px;
+    padding-bottom: 5px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    @extend .base-typography;
+
+    &.--active {
+      border-bottom: 1px solid $weather-black;
+
+      @extend .bold-typography;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@import "src/style/colors";
+@import "src/style/constants";
+@import "src/style/utils/typography";
+@import "src/style/utils/library";
+
+.widget {
+  width: max-content;
+
+  background-color: $weather-main-color;
+  border-radius: calc(#{$weather-main-radius} / 2);
+  padding: 10px;
+  margin: 5px;
+
+  &.small {
+    & .widget-title {
+      width: 100%;
+
+      @extend .bold-typography;
+      @extend .flex-center;
+
+      font-size: 12px;
+
+      & > span:first-letter {
+        text-transform: uppercase;
+      }
+    }
+
+    & .widget-body {
+      @extend .flex-center;
+    }
+
+    & .widget-footer {
+      width: 100%;
+
+      @extend .flex-center;
+      @extend .regular-typography;
+    }
+  }
+
+  &.big {}
+}

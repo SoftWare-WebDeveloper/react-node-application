@@ -1,0 +1,1 @@
+export const API_TOKEN:string = '1234567890';

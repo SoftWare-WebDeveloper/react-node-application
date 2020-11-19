@@ -1,0 +1,7 @@
+@import "src/style/utils/library";
+
+.icons-input-wrapper {
+  width: 100%;
+
+  @extend .flex-center;
+}

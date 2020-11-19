@@ -1,0 +1,15 @@
+@import "../../../../style/colors";
+@import "src/style/constants";
+
+.weather-app {
+  width: 90%;
+  height: 90%;
+  max-width: 1048px;
+
+  display: flex;
+
+  position: relative;
+  background-color: $weather-main-color;
+  border-radius: $weather-main-radius;
+  overflow: hidden;
+}

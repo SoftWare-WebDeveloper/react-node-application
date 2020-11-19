@@ -1,0 +1,25 @@
+$base-family: "Nunito";
+
+.base-typography {
+  font-family: $base-family;
+  font-size: 15px;
+  user-select: none;
+}
+
+.placeholder-typography {
+  @extend .base-typography;
+
+  font-size: 14px;
+}
+
+.bold-typography {
+  @extend .base-typography;
+
+  font-weight: 700;
+}
+
+.regular-typography {
+  @extend .base-typography;
+
+  font-weight: 500;
+}

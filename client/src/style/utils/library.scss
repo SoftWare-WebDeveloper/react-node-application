@@ -1,0 +1,63 @@
+@import "src/style/colors";
+
+// FLEX
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-bottom {
+  @extend .flex-center;
+  align-items: flex-end;
+}
+
+.flex-top {
+  @extend .flex-center;
+  align-items: flex-start;
+}
+
+.flex-left {
+  @extend .flex-center;
+  justify-content: flex-start;
+}
+
+.flex-right {
+  @extend .flex-center;
+  justify-content: flex-end;
+}
+
+.flex-column {
+  @extend .flex-center;
+  flex-direction: column;
+}
+
+.flex-wrap {
+  @extend .flex-center;
+  flex-wrap: wrap;
+}
+
+// LIST
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  & > li {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+// BORDER
+.base-border {
+  border-width: 1px;
+  border-style: solid;
+  border-color: $weather-border;
+}

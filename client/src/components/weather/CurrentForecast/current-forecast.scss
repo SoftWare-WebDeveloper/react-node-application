@@ -1,0 +1,35 @@
+@import "src/style/utils/typography";
+@import "src/style/utils/library";
+
+.current-big-forecast {
+  width: 100%;
+
+  @extend .flex-left;
+  @extend .flex-column;
+
+  &--image {
+    width: 100%;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  &--info {
+    &--temperature {
+      @extend .base-typography;
+      font-size: 60px;
+    }
+
+    &--day-time {
+      @extend .base-typography;
+      font-size: 20px;
+      margin-left: 5px;
+      margin-right: auto;
+
+      & > span:first-child {
+        text-transform:capitalize;
+      }
+    }
+  }
+}

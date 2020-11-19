@@ -1,0 +1,38 @@
+@import "src/style/colors";
+@import "src/style/utils/library";
+@import "src/style/constants";
+@import "src/style/utils/typography";
+
+.toggle {
+  width: max-content;
+  height: 100%;
+
+  @extend .list;
+  @extend .flex-center;
+
+  & .--option {
+    width: $weather-toggle-size;
+    height: $weather-toggle-size;
+
+    margin-left: 10px;
+    background-color: $weather-main-color;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: $weather-transition;
+
+    color: $weather-black;
+
+    @extend .regular-typography;
+    @extend .base-border;
+    @extend .flex-center;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &.--active {
+      background-color: $weather-black;
+      color: $weather-main-color;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import "src/style/colors";
+@import "src/style/constants";
+@import "src/style/utils/library";
+
+.weather--main-panel {
+  width: 70%;
+  height: 100%;
+
+  background-color: $weather-secondary-color;
+  padding: 0 30px;
+
+  & .--header {
+    height: $weather-header-height;
+
+    @extend .flex-between;
+
+    & .--mode-nav-bar {
+      @extend .flex-bottom;
+    }
+  }
+
+  & .--body {
+    width: 100%;
+    height: max-content;
+
+    @extend .flex-left;
+    @extend .flex-column;
+
+    & .--widgets {
+      width: 100%;
+      height: max-content;
+      padding-top: 20px;
+
+      @extend .flex-left;
+      @extend .flex-wrap;
+
+      & .small-widget-image {
+        width: 70px;
+      }
+    }
+  }
+}

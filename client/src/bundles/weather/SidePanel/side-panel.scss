@@ -1,0 +1,44 @@
+@import "src/style/colors";
+@import "src/style/utils/library";
+@import "src/style/constants";
+
+.weather--side-panel {
+  width: 30%;
+  height: 100%;
+
+  padding: 0 50px;
+
+  &--search {
+    width: 100%;
+    height: $weather-header-height;
+
+
+    @extend .flex-center;
+    @extend .flex-bottom;
+
+    &--input-wrapper {
+      @extend .flex-between;
+    }
+
+    &--location {
+      width: 30px;
+      height: 30px;
+
+      background-color: $weather-secondary-color;
+      border-radius: 50%;
+      cursor: pointer;
+
+      @extend .base-border;
+      @extend .flex-center;
+
+      &:hover {
+        background-color: $weather-primary-color;
+        opacity: 0.8;
+      }
+
+      &:active {
+        opacity: 0.5;
+      }
+    }
+  }
+}
